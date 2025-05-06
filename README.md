@@ -14,6 +14,12 @@
    pip install -r requirements.txt
    ```  
 
+3. Create and activate the Conda environment:
+   ```
+   conda create -n Diverse_ICL python=3.10 -y
+   conda activate Diverse_ICL
+   ```
+   
 ---
 
 ## Top-k Candidate Retrieval with TFIDF

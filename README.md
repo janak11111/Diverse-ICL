@@ -14,7 +14,7 @@
    pip install -r requirements.txt
    ```  
 
-3. Create and activate the Conda environment:
+3. Create and activate the conda environment:
    ```
    conda create -n Diverse_ICL python=3.10 -y
    conda activate Diverse_ICL

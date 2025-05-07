@@ -1,6 +1,12 @@
 ## 🚀 Exploring the Role of Diversity in Example Selection for In-Context Learning
 
 
+**Published:** SIGIR 2025 Conference on Research and Development in Information Retrieval, Padua, Italy
+
+**Authors**: *Janak Kapuriya*, *Manit Kaushik*, *Debasis Ganguly*, *Sumit Bhatia*
+
+---
+
 ![Diverse_ICL_Workflow](diverse_ICL_workflow.jpg)
 
 

@@ -1,7 +1,5 @@
-# 🚀 Exploring the Role of Diversity in Example Selection for In-Context Learning
+## 🚀 Exploring the Role of Diversity in Example Selection for In-Context Learning
 
-
-## Methodology
 
 ![Diverse_ICL_Workflow](diverse_ICL_workflow.jpg)
 

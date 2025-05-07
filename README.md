@@ -3,7 +3,7 @@
 
 ## Methodology
 
-![Diverse_ICL_Workflow](diverse_ICL_workflow.png)
+![Diverse_ICL_Workflow](diverse_ICL_workflow.jpg)
 
 
 

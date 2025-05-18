@@ -9,7 +9,31 @@
 
 ![Diverse_ICL_Workflow](diverse_ICL_workflow.jpg)
 
+## How to Use This Project
 
+This project implements a three-stage pipeline to improve In-Context Learning (ICL) performance across four datasets: **TREC**, **SST2**, **COLA**, and **RTE**. The pipeline consists of the following stages:
+
+### 1. Top-K Candidate Retrieval
+The first stage involves retrieving the **top-K candidate examples** for the given dataset. These examples are selected using similarity-based methods to identify the most relevant instances.
+
+### 2. MMR-Based Topic Diversification and Re-Ranking
+In the second stage:
+- The top-K candidates are re-ranked using a **Maximal Marginal Relevance (MMR)** topic diversification approach.
+- This re-ranking ensures a balance between relevance and diversity in the candidate examples.
+- The final **top-k examples** are selected from the re-ranked list, where \( K = nk \), and \( k \) is the total number of instances used for ICL.
+
+### 3. In-Context Learning (ICL)
+The final stage involves performing In-Context Learning (ICL) using three families of models:
+- **LLaMA3.1-8B**
+- **Mistral-7B**
+- **Phi3-2.8B**
+
+The ICL is performed under three settings:
+1. **Zero-Shot**
+2. **Standard Few-Shot**
+3. **MMR-Few Shot**
+
+This approach aims to optimize the ICL process by combining candidate retrieval with diversity-aware candidate selection to boost performance of diverse text classification tasks.
 
 ## Installation  
 

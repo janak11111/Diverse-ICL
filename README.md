@@ -38,7 +38,7 @@ Run the script to retrieve top-K similar examples with sparse features (TFIDF):
 
 ```bash
 # Run in Python environment
-python TFIDF_Top_K_retrieval.py  --train_file /path/to/train.jsonl --test_file /path/to/test.jsonl  --output_file /path/to/output.json  --top_k 45
+python Top_K_Candidate_Retrieval.py  --dataset_name SST2 --train_file /path/to/train.jsonl --test_file /path/to/test.jsonl --top_k 45 --feature_type TFIDF --output_file /path/to/output.json  
 ```  
 
 ## Top-k Candidate Retrieval with SBERT
@@ -47,7 +47,7 @@ Run the script to retrieve top-K similar examples with dense features (SBERT):
 
 ```bash
 # Run in Python environment
-python SBERT_Top_K_retrieval.py --train_file /path/to/train.jsonl  --test_file /path/to/test.jsonl --output_file /path/to/output.json  --model_name all-MiniLM-L6-v2   --top_k 45
+python Top_K_Candidate_Retrieval.py --dataset_name COLA --train_file /path/to/train.jsonl  --test_file /path/to/test.jsonl --top_k 45  --feature_type SBERT --model_name all-MiniLM-L6-v2 --output_file /path/to/output.json     
 ```
 
 ---

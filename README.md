@@ -94,4 +94,18 @@ Run the script to Rerank top-K similar examples using MMR with dense features (S
 ```bash
 # Run in Python environment
 python SBERT_based_MMR.py --test_file <path_to_test_file> --output_file <path_to_output_file> --alpha 0.5 --top_k 15
+
+```
+
+## Citation
+
+If you find this project useful, please cite our work:
+
+```
+@article{kapuriya2025exploring,
+  title={Exploring the Role of Diversity in Example Selection for In-Context Learning},
+  author={Kapuriya, Janak and Kaushik, Manit and Ganguly, Debasis and Bhatia, Sumit},
+  journal={arXiv preprint arXiv:2505.01842},
+  year={2025}
+}
 ```

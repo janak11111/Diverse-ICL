@@ -82,7 +82,8 @@ Run the script to Rerank top-K similar examples using MMR with sparse features (
 
 ```bash
 # Run in Python environment
-python TFIDF_based_MMR.py --test_file <path_to_test_file> --output_file <path_to_output_file> --alpha 0.5 --top_k 15
+python Reranking_with_MMR.py --method sbert --dataset_name sst2 --test_file test.json --output_file output.json --alpha 0.1 --top_k 15 
+
 ```
 
 ---
@@ -93,7 +94,8 @@ Run the script to Rerank top-K similar examples using MMR with dense features (S
 
 ```bash
 # Run in Python environment
-python SBERT_based_MMR.py --test_file <path_to_test_file> --output_file <path_to_output_file> --alpha 0.5 --top_k 15
+python Reranking_with_MMR.py --method tfidf --dataset_name sst2 --test_file test.json --output_file output.json --alpha 0.5 --top_k 15 
+
 
 ```
 

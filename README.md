@@ -76,7 +76,7 @@ python Top_K_Candidate_Retrieval.py --dataset_name COLA --train_file /path/to/tr
 
 ---
 
-## Rerank candidates with TFIDF-MMR
+## MMR Reranking with TFIDF
 
 Run the script to Rerank top-K similar examples using MMR with sparse features (TFIDF):   
 
@@ -87,7 +87,7 @@ python TFIDF_based_MMR.py --test_file <path_to_test_file> --output_file <path_to
 
 ---
 
-## Rerank candidates with SBERT-MMR
+## MMR Reranking with SBERT
 
 Run the script to Rerank top-K similar examples using MMR with dense features (SBERT):   
 

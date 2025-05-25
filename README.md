@@ -62,7 +62,7 @@ Run the script to retrieve top-K similar examples with sparse features (TFIDF):
 
 ```bash
 # Run in Python environment
-python Top_K_Candidate_Retrieval.py  --dataset_name SST2 --train_file /path/to/train.jsonl --test_file /path/to/test.jsonl --top_k 45 --feature_type TFIDF --output_file /path/to/output.json  
+python Top_K_Candidate_Retrieval.py  --dataset_name SST2 --train_file /path/to/SST2/train.jsonl --test_file /path/to/test.jsonl --top_k 45 --feature_type TFIDF --output_file /path/to/output.json  
 ```  
 
 ## Top-k Candidate Retrieval with SBERT
@@ -71,7 +71,7 @@ Run the script to retrieve top-K similar examples with dense features (SBERT):
 
 ```bash
 # Run in Python environment
-python Top_K_Candidate_Retrieval.py --dataset_name COLA --train_file /path/to/train.jsonl  --test_file /path/to/test.jsonl --top_k 45  --feature_type SBERT --model_name all-MiniLM-L6-v2 --output_file /path/to/output.json     
+python Top_K_Candidate_Retrieval.py --dataset_name COLA --train_file /path/to/COLA/train.jsonl  --test_file /path/to/test.jsonl --top_k 45  --feature_type SBERT --model_name all-MiniLM-L6-v2 --output_file /path/to/output.json     
 ```
 
 ---
@@ -82,7 +82,7 @@ Run the script to Rerank top-K similar examples using MMR with sparse features (
 
 ```bash
 # Run in Python environment
-python Reranking_with_MMR.py --method sbert --dataset_name sst2 --test_file test.json --output_file output.json --alpha 0.1 --top_k 15 
+python Reranking_with_MMR.py --method sbert --dataset_name TREC --test_file /path/to/TREC/test.json --output_file /path/to/output.json --alpha 0.1 --top_k 15 
 
 ```
 
@@ -94,7 +94,7 @@ Run the script to Rerank top-K similar examples using MMR with dense features (S
 
 ```bash
 # Run in Python environment
-python Reranking_with_MMR.py --method tfidf --dataset_name sst2 --test_file test.json --output_file output.json --alpha 0.5 --top_k 15 
+python Reranking_with_MMR.py --method tfidf --dataset_name sst2 --test_file /path/to/SST2/test.json --output_file /path/to/output.json --alpha 0.5 --top_k 15 
 
 
 ```

@@ -104,10 +104,11 @@ python Reranking_with_MMR.py --method tfidf --dataset_name sst2 --test_file /pat
 If you find this project useful, please cite our work:
 
 ```
-@article{kapuriya2025exploring,
+@inproceedings{kapuriya2025exploring,
   title={Exploring the Role of Diversity in Example Selection for In-Context Learning},
   author={Kapuriya, Janak and Kaushik, Manit and Ganguly, Debasis and Bhatia, Sumit},
-  journal={arXiv preprint arXiv:2505.01842},
+  booktitle={Proceedings of the 48th International ACM SIGIR Conference on Research and Development in Information Retrieval},
+  pages={2962--2966},
   year={2025}
 }
 ```
